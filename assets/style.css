@@ -1,0 +1,572 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --blue: #5a8ef9;
+  --lightBlue: #e5edff;
+  --pink: #d81e5b;
+  --darkBlue: #022f40;
+  --white: #ffffff;
+  --yellow: #eba303;
+}
+
+body {
+  font-size: 16px;
+  color: var(--darkBlue);
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white);
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background-color:var(--white);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--pink);
+  border-radius: 5px;
+}
+
+
+
+img {
+  object-fit: contain;
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navLink,
+#introStr1,
+.caseLabel,
+.caseParagraphDiv,
+.BtnAll,
+.BtnGoSum,
+.CVbtns,
+#catImgTXT,
+.arrowNav {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+
+body,
+main,
+header,
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+#footer {
+  background-color: var(--blue);
+  padding: 10px;
+  color: var(--white);
+}
+
+#linkEd {
+  margin: 10px;
+}
+#linkEdImg {
+  max-width: 30px;
+}
+#copyRight {
+  margin: 20px 30px;
+}
+#nav {
+  margin: 20px 80vw 20px 10px;
+}
+.navLink {
+  margin: 10px 20px 10px 0;
+  font-size: 1.5rem;
+}
+#introImg {
+  width: 50vw;
+  height: auto;
+}
+
+#intro {
+  background-color: var(--blue);
+  justify-content: center;
+  width: 50vw;
+  height: auto;
+  color: var(--white);
+}
+#main {
+  margin: 20px 0px;
+}
+
+.introlink {
+  font-size: 1.5rem;
+  padding: 0 100px;
+}
+#introStr1 {
+  font-size: 2rem;
+}
+
+#logo {
+  max-width: 50px;
+  margin: 20px;
+}
+
+#logoLink {
+  margin: 0 50px;
+}
+
+@keyframes typing {
+  0% {
+    opacity: 0%;
+    color: var(--pink);
+  }
+  25% {
+    opacity: 25%;
+    color: #37d9df;
+  }
+  50% {
+    opacity: 50%;
+    color: #dfccfd;
+  }
+  75% {
+    opacity: 75%;
+    color: #fdfccb;
+  }
+  100% {
+    opacity: 100%;
+    color: var(--white);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0%;
+    color: var(--yellow);
+  }
+  25% {
+    opacity: 25%;
+    color: #fdfccb;
+  }
+  50% {
+    opacity: 50%;
+    color: #dfccfd;
+  }
+  75% {
+    opacity: 75%;
+    color: #0a595c;
+  }
+  100% {
+    opacity: 100%;
+    color: var(--darkBlue);
+  }
+}
+@keyframes pulsating {
+  0% {
+    color: #37df61;
+  }
+  25% {
+    color: #fdfccb;
+  }
+  50% {
+    color: #dfccfd;
+  }
+  75% {
+    color: var(--pink);
+  }
+  100% {
+    opacity: 100%;
+    color: var(--darkBlue);
+  }
+}
+
+#introStr1,
+#introStr2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#introStr1 p,
+#introStr2 p {
+  margin: 0 0.2rem;
+}
+
+#introImg,
+.typedWord,
+#nav,
+#logo {
+  animation-name: typing;
+  animation-duration: 1s;
+}
+
+#header {
+  margin: 0 100px;
+}
+#mainSection {
+  margin: 0;
+  background-color: var(--lightBlue);
+}
+#scrollSign {
+  position: absolute;
+  right: 100px;
+  font-size: 1.2rem;
+  font-family: "Playfair Display", sans-serif;
+  animation-name: dissapear;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dissappear {
+  0% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 75%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 25%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+.caseDivtxt {
+  width: 50vw;
+  height: auto;
+}
+
+.imageCase {
+  width: 30vw;
+  height: auto;
+  margin: 0 100px;
+}
+
+.caseContentDiv,
+.caseHeadline,
+.caseParagraphDiv {
+  margin: 50px 50px;
+}
+
+.caseLabel,
+.caseContent {
+  margin: 0 20px 0 0;
+}
+
+.caseParagraphDiv {
+  display: flex;
+}
+.linkPar {
+  margin: 20px;
+  color: var(--pink);
+  text-decoration: none;
+}
+.BtnAll {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+  padding: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.BtnAll::after {
+  content: " \f13a ";
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  font-size: 1rem;
+  color: inherit;
+}
+
+.BtnAll:hover,
+.BtnGoSum:hover,
+.socialLinks {
+  cursor: pointer;
+  color: var(--yellow);
+}
+
+.openBtnAll {
+  margin-right: 20px;
+}
+
+.openBtnAll::after {
+  content: " \f139 ";
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  font-size: 1rem;
+  color: inherit;
+}
+
+.caseDivtxt,
+.imageCase {
+  margin: 0;
+  width: 50vw;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.imageCase {
+  max-height: 40vw;
+}
+
+.flex-around {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 100px 1fr;
+}
+
+.caseBreakLeft {
+  width: 50vw;
+  height: 20px;
+  background-color: var(--blue);
+  margin: 0;
+}
+.caseBreakRight {
+  width: 50vw;
+  height: 20px;
+  background-color: var(--lightBlue);
+  margin: 0;
+}
+
+.none {
+  display: none;
+}
+
+.TXTdiv {
+  margin: 50px;
+}
+
+.BtnGoSum {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: inherit;
+  color: inherit;
+  font-weight: 600;
+  padding: 0;
+  transition: 0.3s ease-in-out;
+  margin-left: 50px;
+}
+
+.TXTdiv,
+.caseDivSum {
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+.mainSecTitle {
+  margin: 50px 100px 0 100px;
+  font-size: 2rem;
+  color: inherit;
+}
+
+.artConTXT {
+  width: 50vw;
+  margin: 0;
+}
+
+.artConTXTleft {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 50px 100px;
+  box-sizing: border-box;
+}
+.artConTXTright {
+  background-color: var(--lightBlue);
+  padding: 50px 100px;
+  box-sizing: border-box;
+}
+
+.contactSecTitle {
+  margin: 0;
+  color: var(--white);
+}
+
+.socialLinks {
+  margin: 20px 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.caseContentA {
+  margin: 0 0 10px 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+#emailLink::before {
+  content: " \f0e0 ";
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  font-size: 1rem;
+  color: inherit;
+  margin-right: 20px;
+}
+#phoneLink::before {
+  content: " \f095 ";
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  font-size: 1rem;
+  color: inherit;
+  margin-right: 20px;
+}
+#linkedLink::before {
+  content: " \f08c ";
+  font-family: "Font Awesome 5 brands";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #0a66c2;
+  margin-right: 20px;
+}
+#githubLink::before {
+  content: " \f09b ";
+  font-family: "Font Awesome 5 brands";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+  margin-right: 20px;
+}
+#contactTXTimg {
+  width: 30vw;
+  height: auto;
+  object-fit: contain;
+}
+
+.CVbtns {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: var(--pink);
+  color: var(--white);
+  border-radius: 5px;
+  text-decoration: none;
+  width: 100px;
+  max-height: 25px;
+  text-align: center;
+}
+
+.CVbtns:hover {
+  background-color: var(--yellow);
+  color: var(--pink);
+}
+
+#CVdownBtn {
+  margin-right: 20px;
+}
+#CVreadBTNS > #CVdownBtn {
+  margin-top: 0;
+}
+
+/* #CVcloseBtn{
+  width: 70px;
+} */
+
+#CVreadFile {
+  margin: 50px 50px 50px 25vw;
+  padding: 0;
+  width: 50vw;
+  height: 90vh;
+}
+
+#CVreadBTNS {
+  margin: 50px;
+}
+
+#catImg {
+  width: 150px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+#catImgDiv {
+  width: 150px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  animation-name: typing;
+  animation-iteration-count: infinite;
+  animation-delay: -2s;
+}
+
+#catImgDiv:hover {
+  cursor: pointer;
+}
+#catImgTXT {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 2;
+  font-size: 1.5rem;
+  color: var(--darkBlue);
+  animation-name: pulsating;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.arrowNav {
+  margin: 20px 0 20px 100px;
+  font-size: 1rem;
+  animation-name: pulsating;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+.arrowDown::before {
+  content: " \f063 ";
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  font-size: 1rem;
+  color: inherit;
+  margin-right: 20px;
+}
+.arrowUp::before {
+  content: " \f062 ";
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  font-size: 1rem;
+  color: inherit;
+  margin-right: 20px;
+}
+
+#linkEd::before {
+  content: " \f08c ";
+  font-family: "Font Awesome 5 brands";
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--white);
+  margin-right: 20px;
+}
+
+#notebookImg {
+  width: 20vw;
+  margin-left: 100px;
+}
+#contactForm {
+  height: 60vh;
+  border: none;
+  background-color: var(--blue);
+}
+
+
